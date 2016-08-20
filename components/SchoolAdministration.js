@@ -8,9 +8,6 @@ export default class SchoolAdministration extends React.Component{
 	render(){
 		return(
 				<div>
-				<input type="button" value="View Student" />
-				<input type="button" value="View Teacher"/>
-				<input type="button" value="View Guardians"/>
 				<input type="button" value="Add Student" onClick={()=>{var name = this.refs.myInput.value ; this.refs.myInput.value="";return this.props.dispatch(addStudentAction(name))}} />
 				<input type="button" value="Add Teacher" onClick={()=>{var name = this.refs.myInput.value ; this.refs.myInput.value="";return this.props.dispatch(addTeacherAction(name))}} />
 				<DisplayStudents data={this.props.schoolDetails.StudentList}></DisplayStudents>

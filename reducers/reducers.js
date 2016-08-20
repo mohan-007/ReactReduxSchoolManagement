@@ -5,7 +5,7 @@ import { ADD_STUDENT,ADD_TEACHER } from '../actions/actions'
 function addStudent(state,action){
 	switch(action.type){
 		case ADD_STUDENT : return {
-			id : action.id,
+			//id : action.id,
 			name : action.name
 		}
 		default : return state
@@ -26,7 +26,7 @@ function addTeacher(state,action){
 	switch(action.type){
 		case ADD_TEACHER:
 			return {
-				id:action.id,
+				//id:action.id,
 				name:action.name
 			}
 		default : return state
